@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body {
+    font-family: "Raleway";
+    font-weight: bold;
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#navbar {  
+    display: flex;
+    position: absolute  ;
+    top: 0;
+    width: 100%;
+    max-height: calc(100vh - 3.25rem);
+    padding: .5rem 1rem;
+    gap: 1rem;
+
+    background-color: #0e6abc;
+    font-size: 1.2rem;
+    color: white;
+
+    transition: top 1s;
+}
+

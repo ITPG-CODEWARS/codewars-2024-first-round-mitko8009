@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title data-i18n="title">Metropolitan Sofia</title>
+    <icon href="assets/sofia-metro-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 <body>
-    
+    <div id="navbar">
+        <img src="assets/metro-sofia-logo-white.svg" style="width: 2.5rem;">
+        <a data-i18n="title" style="max-width: 3dvw;"></a>
+    </div>
+
+    <video autoplay muted loop id="video">
+        <source src="assets/title-video.mp4" type="video/mp4">
+    </video>
+
+    <h1 id="title" data-i18n="title">Metro Sofia</h1>
+    <p id="footer" data-i18n="disclaimer"></p>
+
+    <script src="main.js"></script>
 </body>
 </html>
