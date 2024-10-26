@@ -10,15 +10,23 @@ body {
     min-width: 100%;
     
     z-index: -1;
-    filter: blur(.5rem) brightness(.9) contrast(1.2);
+    filter: blur(6px) brightness(0.8) saturate(0.8) contrast(1.2);
 }
 
 #title {
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 10rem;
     color: #ffffff;
+    line-height: normal;
+}
+
+#description {
+    color: #fff;
+    font-size: 1.5rem;
+    text-wrap: pretty;
+    max-width: 40%;
+    line-height: 1.8rem;
 }
 
 #footer {

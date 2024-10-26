@@ -1,5 +1,23 @@
 // ATENTION: If you are reading this there is a high chance that you are Deqn Nikolov. In this case you are guilty for everything.
 
+// Append navbar on every page
+const page = window.location.pathname.split('/').pop().split('.')[0];
+
+const navbar = `
+<div id="navbar">
+    <img src="assets/metro-sofia-logo-white.svg" style="width: 2.5rem;">
+    <a data-i18n="title" style="max-width: 3dvw;"></a>
+    <div class="nav-buttons">
+        <a href="index.html" data-i18n="home" class="${page == "index" ? "active" : ""}"></a>
+        <a href="map.html" data-i18n="map" class="${page == "map" ? "active" : ""}"></a>
+        <a href="facts.html" data-i18n="facts" class="${page == "facts" ? "active" : ""}"></a>
+        <a href="history.html" data-i18n="history" class="${page == "history" ? "active" : ""}"></a>
+    </div>
+</div>`
+
+document.body.insertAdjacentHTML('afterbegin', navbar);
+
+
 // Navbar hide on scroll
 var prevScrollpos = window.scrollY;
 window.onscroll = function () {
@@ -14,7 +32,7 @@ window.onscroll = function () {
 
 // Language switcher
 // Default lang: English
-// Supported langs: English, Bulgarian, Russian
+// Supported langs: English, Bulgarian, Russian, Diko language
 const supportedLanguages = ['en', 'bg', 'ru']
 const defaultLanguage = 'en'
 
@@ -48,5 +66,6 @@ function updateUI(translations) {
 
 window.addEventListener('load', () => {
     const userLang = getPreferredLanguage();
-    setLanguage(userLang);
+    // setLanguage(userLang);
+    setLanguage('ru');
 });
