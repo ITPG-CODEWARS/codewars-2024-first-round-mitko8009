@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+    #navbar {
+        display: flex;
+        position: absolute;
+        top: 0;
+        max-width: calc(100vw - 2rem);
+        max-height: calc(100vh - 3.25rem);
+        overflow-x: hidden;
+    }
+
+    .nav-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        gap: .8rem;
+        align-self: center;
+        margin-left: 0rem;
+    }
+
+    .nav-buttons a.active, .nav-buttons a:hover {
+        outline-offset: 2px;
+    }
+
+    .nav-buttons a {
+        font-size: 1rem;
+        text-align: center;
+        padding: .1rem;
+    }
+
+    #footer {
+        font-size: 1rem;
+        max-width: calc(100dvw - 4rem);
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        max-width: calc(100vw - 2rem);
+        line-height: 1.5rem;
+    }
+
+    #metro-map {
+        width: 90dvw;
+    }
+}

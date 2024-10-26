@@ -7,8 +7,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
+/* Navbar */
 #navbar {  
     display: flex;
     position: absolute  ;
@@ -37,14 +39,17 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
+
+    transition-duration: 100ms;
 }
 
-.nav-buttons a.active {
+.nav-buttons a.active, .nav-buttons a:hover {
     outline: 3px solid #d9edff;
     outline-offset: 5px;
     border-radius: 2px;
 }
 
+/* General */
 .container {
     display: flex;
     flex-direction: column;
@@ -69,7 +74,63 @@ body {
     border-radius: 8px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .icon128 {
     width: 128px;
     height: 128px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    padding: .5rem 1rem;
+    background-color: #0e6abc;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin: 1rem 1rem 1rem 1rem
+}
+
+.nav-title {
+    text-wrap: wrap;
+    inline-size: 5rem;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    
+    z-index: -1;
+    filter: blur(6px) brightness(0.8) saturate(0.8) contrast(1.2);
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    line-height: normal;
+}
+
+.description {
+    color: #fff;
+    font-size: 1.5rem;
+    text-wrap: pretty;
+    max-width: 40%;
+    line-height: 1.8rem;
+}
+
+/* Specific */
+#metro-map {
+    width: 80dvw;
 }
