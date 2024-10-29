@@ -1,7 +1,7 @@
 // Language switcher
 // Default lang: English
-// Supported langs: English, Bulgarian, Russian, Diko language
-const supportedLanguages = ['en', 'bg', 'ru']
+// Supported langs: English, Bulgarian, Russian, Dido language
+const supportedLanguages = ['en', 'bg', 'ru', "es"]
 const defaultLanguage = 'en'
 
 async function loadLanguageModule(lang) {

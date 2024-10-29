@@ -130,6 +130,34 @@ body {
     line-height: 1.8rem;
 }
 
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: #0e6abc;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition-duration: 100ms;
+}
+
+.button:hover {
+    background-color: #0c5fa8;
+    outline: 1px solid #d9edff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:active {
+    background-color: #0a3f6d;
+    outline: 1px solid #d9edff;
+    color: #fff;
+    text-decoration: none;
+}
+
 /* Specific */
 #metro-map {
     width: 80dvw;
