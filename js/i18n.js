@@ -1,6 +1,6 @@
 // Language switcher
 // Default lang: English
-// Supported langs: English, Bulgarian, Russian, Dido language
+// Supported langs: English, Bulgarian, Russian
 const supportedLanguages = ['en', 'bg', 'ru', "es"]
 const defaultLanguage = 'en'
 

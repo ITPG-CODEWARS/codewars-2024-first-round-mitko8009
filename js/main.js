@@ -1,4 +1,3 @@
-// ATENTION: If you are reading this there is a high chance that you are Deqn Nikolov. In this case you are guilty for everything.
 const page = window.location.pathname.split('/').pop().split('.')[0];
 
 // Append navbar on every page
