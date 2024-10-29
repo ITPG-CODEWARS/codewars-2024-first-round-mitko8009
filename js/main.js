@@ -28,6 +28,5 @@ window.onscroll = function () {
 window.addEventListener('DOMContentLoaded', () => {
     document.body.insertAdjacentHTML('afterbegin', navbar);
     const userLang = getPreferredLanguage();
-    // setLanguage(userLang);
-    setLanguage('en');
+    setLanguage(userLang);
 });
